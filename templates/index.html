@@ -5,7 +5,7 @@ Home Page
 {% endblock title %}
 
 {% block body %}
-{% include 'include/headtitle.html' with headtitle="Mini-Blog" headsubTitle=""  %}
+{% include 'include/headtitle.html' with headtitle="VictoryKick 360" headsubTitle=""  %}
 <div class="container py-4 px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-md-10">
@@ -14,11 +14,11 @@ Home Page
             <div class="post-preview">
                 <a href="{% url 'post' blog.slug %}">
                     <h2 class="post-title">{{blog.title}}</h2>
-                    <h3 class="post-subtitle">
+                    <p class="post-subtitle">
                         {% if blog.subtitle %}
                         {{blog.subtitle}}
                         {% endif %}
-                    </h3>
+                    </p>
                 </a>
                 <p class="post-meta">
                     Posted by
